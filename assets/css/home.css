@@ -1,0 +1,109 @@
+* {
+    font-family: 'segoe ui';
+}
+/*Gradasi BG*/
+.form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 1000px;
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+}
+.form h1 {
+    text-align: center;
+    margin-bottom: -1px;
+    font-weight: 1000;
+    font-size: 100px;
+}
+.form h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 36px;
+}
+.form input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+}
+.form a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: rgb(68, 68, 68);
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+}
+.form img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.animasi {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1px;
+    font-weight: 1000;
+    font-size: 100px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(70, end);
+    animation: ketikan 5s steps(70, end);
+}
+@keyframes ketikan{
+  from { width: 0; }
+}
+@-webkit-keyframes ketikan{
+  from { width: 0; }
+}
+
+.form2 {
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 3%;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 400px;
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+}
+.form2 h1 {
+    font-size: 24px;
+    font-weight: 1000;
+}
+.form2 h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.form2 button {
+    display: inline-block;
+}
+.form2 p {
+    color: grey;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 5px;
+    float: right;
+}

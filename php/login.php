@@ -10,8 +10,9 @@
             }
         </style>
     </head>
+    <body>
         <form class="form">
-        <img src="https://img.icons8.com/nolan/64/virus.png"/>
+            <img src="https://img.icons8.com/nolan/50/virus.png"/>
             <h1>pandENDmic</h1>
             <h3>ProjectBy_2039_2013</h3>
             <div class="form-floating mb-3">
