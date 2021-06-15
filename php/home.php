@@ -17,7 +17,7 @@
         <div class="animasi">pandENDmic</div>
         <h3>"All the stories about us who got through this pandemic and all the messages that haven't been conveyed in this pandemic too"</h3>
           </div>
-          <a href="daftar.php">
+          <a href="http://localhost/php/daftar.php">
           <button type="button" class="btn btn-primary">TELL YOURS</button>
           </a>
         </form><br>
