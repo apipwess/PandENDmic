@@ -3,7 +3,7 @@ class Database{
     protected $host = 'localhost';
     protected $dbname = 'pandemic';
     protected $user = 'root';
-    protected $password = 'jemblong';
+    protected $password = '';
 
     public function openDbConnection()
     {
