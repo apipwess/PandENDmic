@@ -30,7 +30,6 @@
                 </label>
               </div>
               <a href="home.php"><button type="button" class="btn btn-primary">Login</button><a>
-              <a href="daftar.php">Belum Mempunyai Akun? Daftar Disini<a>
         </form>
     </body>
 </html>
