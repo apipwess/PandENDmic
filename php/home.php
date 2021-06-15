@@ -11,14 +11,6 @@
             }
         </style>
     </head>
-    <?php
-    require_once "../lib/Database.php";
-    require_once "../controller/story.php";
-    require_once "../model/messageModel.php";
-    $db = new Database();
-    $model = new messageModel($db);
-    $controller = new Story($model);
-    ?>
     <header>
       <form class="form">
         <img src="https://img.icons8.com/nolan/96/virus.png"/>
@@ -30,5 +22,12 @@
           </a>
         </form><br>
     </header>
-    <?php $controller->index() ?>
+    <?php 
+    require_once "../lib/Database.php";
+    require_once "../controller/story.php";
+    require_once "../model/messageModel.php";
+    $db = new Database();
+    $model = new messageModel($db);
+    $controller = new Story($model);
+    $controller->index(); ?>
 </html>

@@ -54,31 +54,47 @@ class messageModel{
         $this->db->closeDbConnection($link);
     }
 
-    public function update($id)
+    public function delete($id)
     {
         $link = $this->db->openDbConnection();
 
-        $query = "UPDATE story SET nama = :nama, judul = :judul, album = :album, tahun = :tahun WHERE id = :id";
+        $query = "DELETE FROM story WHERE story_id = :id";
         $statement = $link->prepare($query);
-        $statement->bindValue(':nama', $_POST['nama'], PDO::PARAM_STR);
-        $statement->bindValue(':judul', $_POST['judul'], PDO::PARAM_STR);
-        $statement->bindValue(':album', $_POST['album'], PDO::PARAM_STR);
-        $statement->bindValue(':tahun', $_POST['tahun'], PDO::PARAM_STR);
         $statement->bindValue(':id', $id, PDO::PARAM_INT);
         $statement->execute();
 
         $this->db->closeDbConnection($link);
     }
 
-    public function delete($id)
+    public function check()
     {
         $link = $this->db->openDbConnection();
-
-        $query = "DELETE FROM story WHERE id = :id";
+        $query = "SELECT user_id, password FROM login_info WHERE userid=':user_id' AND password=':password'";
         $statement = $link->prepare($query);
-        $statement->bindValue(':id', $id, PDO::PARAM_INT);
+        $statement->bindValue(':user_id', $_POST['user_id'], PDO::PARAM_INT);
+        $statement->bindValue(':password', $_POST['password'], PDO::PARAM_INT);
         $statement->execute();
-
+        $info = array();
+        $count = 0;
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $info[] = $row;
+        }
+        foreach ($info as $row) {
+            if ($row['user_id'] == $userid) {
+                    if ($row['password'] == $password) {
+                        $count = 1;
+                        break;
+                    }
+                    else {
+                        $count = 0;
+                        break;
+                    }
+                }
+                else {
+                    $count = 0;
+                }
+        }
         $this->db->closeDbConnection($link);
+        return $count;
     }
 }

@@ -11,15 +11,10 @@
             }
         </style>
     </head>
-    <?php
-    require_once "../lib/Database.php";
-    require_once "../controller/story.php";
-    require_once "../model/messageModel.php";
-    $db = new Database();
-    $model = new messageModel($db);
-    $controller = new Story($model);
-    ?>
     <header>
+        <a href="home.php">
+          <button type="button" class="btn btn-primary">Log Out</button>
+        </a>
       <form class="form">
         <img src="https://img.icons8.com/nolan/96/virus.png"/>
         <div class="animasi">pandENDmic</div>
@@ -30,5 +25,12 @@
           </a>
         </form><br>
     </header>
-    <?php $controller->index() ?>
+    <?php 
+    require_once "../lib/Database.php";
+    require_once "../controller/story.php";
+    require_once "../model/messageModel.php";
+    $db = new Database();
+    $model = new messageModel($db);
+    $controller = new Story($model);
+    $controller->index_admin(); ?>
 </html>
