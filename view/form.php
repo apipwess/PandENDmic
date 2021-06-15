@@ -7,8 +7,8 @@
                 <label for="floatingInput">From</label>
               </div>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="insert your message" name="messages">
-                <label for="floatingPassword">Message</label>
-              </div> 
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="messages"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
               <button type="submit" class="btn btn-primary">Send</button>
 </form>

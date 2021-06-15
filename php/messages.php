@@ -22,14 +22,9 @@
     <header>
       <form class="form">
         <img src="https://img.icons8.com/nolan/96/virus.png"/>
-        <div class="animasi">pandENDmic</div>
-        <h3>"All the stories about us who got through this pandemic and all the messages that haven't been conveyed in this pandemic too"</h3>
-          </div>
-          <button type="button" class="btn btn-primary">TELL YOURS</button>
-        </form><br>
+        <?php
+            $id = $_GET['id']; 
+            $controller->detail($id) ?>
     </header>
     
-    <?php
-    $id = $_GET['id']; 
-    $controller->detail($id) ?>
 </html>
