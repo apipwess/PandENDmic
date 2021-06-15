@@ -1,7 +1,7 @@
 <?php 
 class Database{
     protected $host = 'localhost';
-    protected $dbname = 'db_latmusic';
+    protected $dbname = 'pandemic';
     protected $user = 'root';
     protected $password = 'jemblong';
 

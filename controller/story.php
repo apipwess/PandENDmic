@@ -1,5 +1,5 @@
 <?php 
-class Music{
+class Story{
     protected $model = '';
 
     public function __construct($model)
@@ -9,23 +9,23 @@ class Music{
 
     public function index()
     {
-        $music = $this->model->getAllmusic();
-        require 'view/music/list.php';
+        $story = $this->model->getAllStory();
+        require '../view/list.php';
     }
 
     public function detail($id)
     {
-        $music = $this->model->getMusicById($id);
-        require 'view/music/detail.php';
+        $story = $this->model->getstoryById($id);
+        require '../view/detail.php';
     }
 
     public function create()
     {
         if ($_POST) {
             $this->model->insert();
-            header("Location: http://localhost/pdomvc/index.php/music");
+            header("Location: http://localhost/php/home.php");
         } else {
-            require 'view/music/form.php';
+            require '../view/form.php';
         }
     }
 
@@ -33,10 +33,10 @@ class Music{
     {
         if ($_POST) {
             $this->model->update($id);
-            header("Location: http://localhost/pdomvc/index.php/music");
+            header("Location: http://localhost/pdomvc/index.php/story");
         } else {
-            $music = $this->model->getMusicById($id);
-            require 'view/music/form.php';
+            $story = $this->model->getstoryById($id);
+            require 'view/story/form.php';
         }
     }
 
@@ -44,7 +44,7 @@ class Music{
     {
         if ($id) {
             $this->model->delete($id);
-            header("Location: http://localhost/pdomvc/index.php/music");
+            header("Location: http://localhost/pdomvc/index.php/story");
         }
     }
 }

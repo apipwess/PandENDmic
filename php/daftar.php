@@ -10,20 +10,15 @@
             }
         </style>
     </head>
-        <form class="form">
-            <img src="https://img.icons8.com/nolan/64/virus.png"/>
-            <h1>Register Your Account</h1>
-            <h3>pandENDmic</h3>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="username">
-                <label for="floatingInput">Username</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
-                <label for="floatingPassword">Password</label>
-              </div> 
-              <a href="login.php"><button type="button" class="btn btn-primary">Daftar</button><a>
-              <a href="login.php">Sudah Mempunyai Akun? Login Disini<a>
-        </form>
+    <body>
+    <?php
+    require_once "../lib/Database.php";
+    require_once "../controller/story.php";
+    require_once "../model/messageModel.php";
+    $db = new Database();
+    $model = new messageModel($db);
+    $controller = new Story($model);
+    $controller->create();
+    ?>
     </body>
 </html>
