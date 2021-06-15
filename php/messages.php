@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,11 +25,11 @@
         <div class="animasi">pandENDmic</div>
         <h3>"All the stories about us who got through this pandemic and all the messages that haven't been conveyed in this pandemic too"</h3>
           </div>
-          <a href="daftar.php">
           <button type="button" class="btn btn-primary">TELL YOURS</button>
-          </a>
         </form><br>
     </header>
-    <?php $controller->index() ?>
+    
+    <?php
+    $id = $_GET['id']; 
+    $controller->detail($id) ?>
 </html>
->>>>>>> Stashed changes
