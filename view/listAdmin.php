@@ -6,6 +6,7 @@
           </div>
           <a href='../php/messages.php?id=<?=$row['story_id'] ?>'>
           <button type="button" class="btn btn-primary">Selengkapnya</button><p>#pandENDmic</p>
+          <button type="button" class="btn btn-danger">Hapus</button>
           </a>
     </form>
     <?php endforeach ?>
