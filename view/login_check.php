@@ -4,11 +4,11 @@
             <h1>pandENDmic</h1>
             <h3>ProjectBy_2039_2013</h3>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="username" name="user_id">
+                <input required type="text" class="form-control" id="floatingInput" placeholder="username" name="user_id">
                 <label for="floatingInput">Username</label>
               </div>
               <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="password" name="password">
+                <input required type="password" class="form-control" id="floatingPassword" placeholder="password" name="password">
                 <label for="floatingPassword">Password</label>
               </div> 
               <div class="form-check">
