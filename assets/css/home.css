@@ -107,3 +107,9 @@
     margin-top: 5px;
     float: right;
 }
+.logout {
+    border: grey;
+    float: right;
+    margin-top: -1%;
+    margin-right: 2%;
+}
