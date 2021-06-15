@@ -2,7 +2,7 @@
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-        <link href="assets/css/login.css" rel="stylesheet">
+        <link href="../assets/css/login.css" rel="stylesheet">
         <style>
             Body {
                 background: url(https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/10.jpg);
@@ -10,8 +10,9 @@
             }
         </style>
     </head>
+    <body>
         <form class="form">
-            <img src="https://img.icons8.com/nolan/64/virus.png"/>
+            <img src="https://img.icons8.com/nolan/50/virus.png"/>
             <h1>pandENDmic</h1>
             <h3>ProjectBy_2039_2013</h3>
             <div class="form-floating mb-3">
@@ -28,7 +29,8 @@
                   Remember Me?
                 </label>
               </div>
-              <button type="button" class="btn btn-primary">Login</button>
+              <a href="home.php"><button type="button" class="btn btn-primary">Login</button><a>
+              <a href="daftar.php">Belum Mempunyai Akun? Daftar Disini<a>
         </form>
     </body>
 </html>

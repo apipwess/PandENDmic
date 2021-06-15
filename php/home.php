@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,4 +32,3 @@
     </header>
     <?php $controller->index() ?>
 </html>
->>>>>>> Stashed changes
